@@ -1,0 +1,1 @@
+/usr/bin/c++   -g   CMakeFiles/sorting_algoritms.dir/main.cpp.o  -o sorting_algoritms 

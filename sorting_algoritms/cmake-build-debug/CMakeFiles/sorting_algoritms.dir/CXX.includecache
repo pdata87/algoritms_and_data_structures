@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/pdata/Podyplomowka/Algorytmy i struktury danych/sorting_algoritms/main.cpp
+iostream
+-
+vector
+-
+chrono
+-
+

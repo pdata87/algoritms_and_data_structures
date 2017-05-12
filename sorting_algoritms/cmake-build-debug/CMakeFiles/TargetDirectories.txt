@@ -1,0 +1,3 @@
+/home/pdata/Podyplomowka/Algorytmy i struktury danych/sorting_algoritms/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/pdata/Podyplomowka/Algorytmy i struktury danych/sorting_algoritms/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/pdata/Podyplomowka/Algorytmy i struktury danych/sorting_algoritms/cmake-build-debug/CMakeFiles/sorting_algoritms.dir
