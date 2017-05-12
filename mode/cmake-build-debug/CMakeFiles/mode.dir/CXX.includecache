@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/pdata/Podyplomowka/repos/algoritms_and_data_structures/mode/Mode.cpp
+Mode.h
+/home/pdata/Podyplomowka/repos/algoritms_and_data_structures/mode/Mode.h
+
+/home/pdata/Podyplomowka/repos/algoritms_and_data_structures/mode/Mode.h
+iostream
+-
+vector
+-
+
+/home/pdata/Podyplomowka/repos/algoritms_and_data_structures/mode/main.cpp
+iostream
+-
+vector
+-
+Mode.h
+/home/pdata/Podyplomowka/repos/algoritms_and_data_structures/mode/Mode.h
+
