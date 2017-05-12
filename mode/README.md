@@ -1,1 +1,1 @@
-# Wyznaczanie dominanty 0-99 z dwiema równorzędnymi dominantami
+# Wyznaczanie dominanty dla listy < int > z opcją występowania dominant dla kilku wartości
