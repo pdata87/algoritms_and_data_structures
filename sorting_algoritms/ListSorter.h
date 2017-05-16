@@ -23,20 +23,19 @@ class ListSorter {
 
     vector<int> unsortedList;
     vector<int> sortedList;
-    long algoritmExecutionTime; // algorithm execution time to compare;
+    long algoritmExecutionTime =0; // algorithm execution time to compare;
     string sortingAlgorithm;
 
 
 
     bool sortVector(){
+
         if(this->sortingAlgorithm == "bubble"){
-            // TODO : CODE REFACTOR to many repetitions of this code -> measure algorithm exectution time
+            // TODO : CODE REFACTOR -> too many duration measure functions
             high_resolution_clock::time_point t1 = high_resolution_clock::now();
                 bubbleSort(unsortedList);
             high_resolution_clock::time_point t2 = high_resolution_clock::now();
-
             this->algoritmExecutionTime = duration_cast<microseconds>( t2 - t1 ).count();
-
         }
         else if(this->sortingAlgorithm == "insert"){
             high_resolution_clock::time_point t1 = high_resolution_clock::now();
@@ -49,12 +48,14 @@ class ListSorter {
                 shellSort(this->unsortedList);
             high_resolution_clock::time_point t2 = high_resolution_clock::now();
             this->algoritmExecutionTime = duration_cast<microseconds>( t2 - t1 ).count();
-
         }
         else {
             cout << "Undefined sorting algorithm" << endl;
             return false;
         }
+
+
+
         return  true;
     }
     void insertSort(vector <int> list){
