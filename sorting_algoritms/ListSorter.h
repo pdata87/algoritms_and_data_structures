@@ -28,7 +28,7 @@ class ListSorter {
 
 
 
-    void sortVector(){
+    bool sortVector(){
         if(this->sortingAlgorithm == "bubble"){
             bubbleSort(unsortedList);
         }
@@ -37,10 +37,13 @@ class ListSorter {
         }
         else if(this->sortingAlgorithm=="shell"){
             shellSort(this->unsortedList);
+
         }
         else {
-            cout << "Undefined sortin algorithm" << endl;
+            cout << "Undefined sorting algorithm" << endl;
+            return false;
         }
+        return  true;
     }
     void insertSort(vector <int> list){
         // variable
@@ -136,12 +139,22 @@ public:
     ListSorter(vector <int> vectorToSort){
         this->unsortedList = vectorToSort;
     }
+    ListSorter(vector <int> vectorToSort, string sortingAlgorithm){
+        this->unsortedList = vectorToSort;
+        this->sortingAlgorithm = sortingAlgorithm;
+        if(this->sortVector()){
+            printExecutionTime();
+            printList(this->sortedList);
+        }
+    }
     void sort(string algorithmType){
         printList(this->unsortedList);
         this->sortingAlgorithm = algorithmType;
-        sortVector();
-        printExecutionTime();
-        printList(this->sortedList);
+        if(sortVector()){
+            printExecutionTime();
+            printList(this->sortedList);
+        }
+
     }
 
 

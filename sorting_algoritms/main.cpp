@@ -12,16 +12,21 @@ long shell_sort (vector <int> list);
 long bubble_sort(vector <int> list);
 
 int main() {
-    vector < int > list_to_sort(5500) ;
-    int no_of_elements = 200;
-    //long sorting_time;
-    //fill_with_random_value(list_to_sort,no_of_elements);
+    vector < int > list_to_sort(200) ;
 
-    ListSorter ls(list_to_sort);
+    long sorting_time;
+    fill_with_random_value(list_to_sort,list_to_sort.size());
 
-        ls.sort("bubble");
-        ls.sort("insert");
-        ls.sort("shell");
+    //calling constructor only with vector and execute each algorithm
+
+//    ListSorter ls(list_to_sort);
+//
+//        ls.sort("bubble");
+//        ls.sort("insert");
+//        ls.sort("shell");
+
+    // calling constructor and execute sorting algoritm
+    ListSorter ls(list_to_sort,"insert");
 
 
     return 0;
