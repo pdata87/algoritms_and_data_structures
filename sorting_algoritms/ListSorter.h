@@ -30,13 +30,25 @@ class ListSorter {
 
     bool sortVector(){
         if(this->sortingAlgorithm == "bubble"){
-            bubbleSort(unsortedList);
+            // TODO : CODE REFACTOR to many repetitions of this code -> measure algorithm exectution time
+            high_resolution_clock::time_point t1 = high_resolution_clock::now();
+                bubbleSort(unsortedList);
+            high_resolution_clock::time_point t2 = high_resolution_clock::now();
+
+            this->algoritmExecutionTime = duration_cast<microseconds>( t2 - t1 ).count();
+
         }
         else if(this->sortingAlgorithm == "insert"){
-            insertSort(this->unsortedList);
+            high_resolution_clock::time_point t1 = high_resolution_clock::now();
+                insertSort(this->unsortedList);
+            high_resolution_clock::time_point t2 = high_resolution_clock::now();
+            this->algoritmExecutionTime = duration_cast<microseconds>( t2 - t1 ).count();
         }
         else if(this->sortingAlgorithm=="shell"){
-            shellSort(this->unsortedList);
+            high_resolution_clock::time_point t1 = high_resolution_clock::now();
+                shellSort(this->unsortedList);
+            high_resolution_clock::time_point t2 = high_resolution_clock::now();
+            this->algoritmExecutionTime = duration_cast<microseconds>( t2 - t1 ).count();
 
         }
         else {
@@ -47,7 +59,7 @@ class ListSorter {
     }
     void insertSort(vector <int> list){
         // variable
-        high_resolution_clock::time_point t1 = high_resolution_clock::now();
+
         int i,j,tmp_value = 0;
         for(i = 1; i < list.size();i ++){                                           // iterate through list
             tmp_value = list[i];                                                //assign current element to temporary variable
@@ -59,14 +71,12 @@ class ListSorter {
             list[j+1] = tmp_value;                                                  // replace values
 
         }
-        high_resolution_clock::time_point t2 = high_resolution_clock::now();
-        long duration = duration_cast<microseconds>( t2 - t1 ).count();
-        this->algoritmExecutionTime=duration;
+
         this->sortedList = list;
 
     }
     void shellSort (vector <int> list){
-        high_resolution_clock::time_point t1 = high_resolution_clock::now();
+
         int gap,i;
         // split list until
         // initial : split list / 2
@@ -95,13 +105,11 @@ class ListSorter {
 
 
         }
-        high_resolution_clock::time_point t2 = high_resolution_clock::now();
-        long duration = duration_cast<microseconds>( t2 - t1 ).count();
-        this->algoritmExecutionTime=duration;
+
         this->sortedList = list;
     }
     void bubbleSort(vector <int> list){
-        high_resolution_clock::time_point t1 = high_resolution_clock::now();
+
 
         for( int i = 0; i < list.size(); i++ )
         {
@@ -119,9 +127,7 @@ class ListSorter {
                 }
             }
         }
-        high_resolution_clock::time_point t2 = high_resolution_clock::now();
-        long duration = duration_cast<microseconds>( t2 - t1 ).count();
-        this->algoritmExecutionTime=duration;
+
         this->sortedList = list;
     }
 
