@@ -4,7 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/pdata/Podyplomowka/Algorytmy i struktury danych/sorting_algoritms/main.cpp" "/home/pdata/Podyplomowka/Algorytmy i struktury danych/sorting_algoritms/cmake-build-debug/CMakeFiles/sorting_algoritms.dir/main.cpp.o"
+  "/home/pdata/Podyplomowka/repos/algoritms_and_data_structures/sorting_algoritms/ListSorter.cpp" "/home/pdata/Podyplomowka/repos/algoritms_and_data_structures/sorting_algoritms/cmake-build-debug/CMakeFiles/sorting_algoritms.dir/ListSorter.cpp.o"
+  "/home/pdata/Podyplomowka/repos/algoritms_and_data_structures/sorting_algoritms/main.cpp" "/home/pdata/Podyplomowka/repos/algoritms_and_data_structures/sorting_algoritms/cmake-build-debug/CMakeFiles/sorting_algoritms.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

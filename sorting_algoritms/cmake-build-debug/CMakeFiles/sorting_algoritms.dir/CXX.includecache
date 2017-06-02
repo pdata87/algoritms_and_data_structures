@@ -6,11 +6,29 @@
 
 #IncludeRegexTransform: 
 
-/home/pdata/Podyplomowka/Algorytmy i struktury danych/sorting_algoritms/main.cpp
+/home/pdata/Podyplomowka/repos/algoritms_and_data_structures/sorting_algoritms/ListSorter.cpp
+ListSorter.h
+/home/pdata/Podyplomowka/repos/algoritms_and_data_structures/sorting_algoritms/ListSorter.h
+
+/home/pdata/Podyplomowka/repos/algoritms_and_data_structures/sorting_algoritms/ListSorter.h
+vector
+-
+chrono
+-
+string
+-
+map
+-
+iostream
+-
+
+/home/pdata/Podyplomowka/repos/algoritms_and_data_structures/sorting_algoritms/main.cpp
 iostream
 -
 vector
 -
 chrono
 -
+ListSorter.h
+/home/pdata/Podyplomowka/repos/algoritms_and_data_structures/sorting_algoritms/ListSorter.h
 

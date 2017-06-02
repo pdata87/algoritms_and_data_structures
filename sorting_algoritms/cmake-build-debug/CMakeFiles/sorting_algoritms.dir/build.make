@@ -43,10 +43,10 @@ RM = /home/pdata/Apps/clion-2017.1/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/pdata/Podyplomowka/Algorytmy i struktury danych/sorting_algoritms"
+CMAKE_SOURCE_DIR = /home/pdata/Podyplomowka/repos/algoritms_and_data_structures/sorting_algoritms
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/pdata/Podyplomowka/Algorytmy i struktury danych/sorting_algoritms/cmake-build-debug"
+CMAKE_BINARY_DIR = /home/pdata/Podyplomowka/repos/algoritms_and_data_structures/sorting_algoritms/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/sorting_algoritms.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/sorting_algoritms.dir/flags.make
 
 CMakeFiles/sorting_algoritms.dir/main.cpp.o: CMakeFiles/sorting_algoritms.dir/flags.make
 CMakeFiles/sorting_algoritms.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/pdata/Podyplomowka/Algorytmy i struktury danych/sorting_algoritms/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/sorting_algoritms.dir/main.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sorting_algoritms.dir/main.cpp.o -c "/home/pdata/Podyplomowka/Algorytmy i struktury danych/sorting_algoritms/main.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pdata/Podyplomowka/repos/algoritms_and_data_structures/sorting_algoritms/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/sorting_algoritms.dir/main.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sorting_algoritms.dir/main.cpp.o -c /home/pdata/Podyplomowka/repos/algoritms_and_data_structures/sorting_algoritms/main.cpp
 
 CMakeFiles/sorting_algoritms.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sorting_algoritms.dir/main.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/pdata/Podyplomowka/Algorytmy i struktury danych/sorting_algoritms/main.cpp" > CMakeFiles/sorting_algoritms.dir/main.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pdata/Podyplomowka/repos/algoritms_and_data_structures/sorting_algoritms/main.cpp > CMakeFiles/sorting_algoritms.dir/main.cpp.i
 
 CMakeFiles/sorting_algoritms.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sorting_algoritms.dir/main.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/pdata/Podyplomowka/Algorytmy i struktury danych/sorting_algoritms/main.cpp" -o CMakeFiles/sorting_algoritms.dir/main.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pdata/Podyplomowka/repos/algoritms_and_data_structures/sorting_algoritms/main.cpp -o CMakeFiles/sorting_algoritms.dir/main.cpp.s
 
 CMakeFiles/sorting_algoritms.dir/main.cpp.o.requires:
 
@@ -81,17 +81,43 @@ CMakeFiles/sorting_algoritms.dir/main.cpp.o.provides: CMakeFiles/sorting_algorit
 CMakeFiles/sorting_algoritms.dir/main.cpp.o.provides.build: CMakeFiles/sorting_algoritms.dir/main.cpp.o
 
 
+CMakeFiles/sorting_algoritms.dir/ListSorter.cpp.o: CMakeFiles/sorting_algoritms.dir/flags.make
+CMakeFiles/sorting_algoritms.dir/ListSorter.cpp.o: ../ListSorter.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pdata/Podyplomowka/repos/algoritms_and_data_structures/sorting_algoritms/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/sorting_algoritms.dir/ListSorter.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sorting_algoritms.dir/ListSorter.cpp.o -c /home/pdata/Podyplomowka/repos/algoritms_and_data_structures/sorting_algoritms/ListSorter.cpp
+
+CMakeFiles/sorting_algoritms.dir/ListSorter.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sorting_algoritms.dir/ListSorter.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pdata/Podyplomowka/repos/algoritms_and_data_structures/sorting_algoritms/ListSorter.cpp > CMakeFiles/sorting_algoritms.dir/ListSorter.cpp.i
+
+CMakeFiles/sorting_algoritms.dir/ListSorter.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sorting_algoritms.dir/ListSorter.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pdata/Podyplomowka/repos/algoritms_and_data_structures/sorting_algoritms/ListSorter.cpp -o CMakeFiles/sorting_algoritms.dir/ListSorter.cpp.s
+
+CMakeFiles/sorting_algoritms.dir/ListSorter.cpp.o.requires:
+
+.PHONY : CMakeFiles/sorting_algoritms.dir/ListSorter.cpp.o.requires
+
+CMakeFiles/sorting_algoritms.dir/ListSorter.cpp.o.provides: CMakeFiles/sorting_algoritms.dir/ListSorter.cpp.o.requires
+	$(MAKE) -f CMakeFiles/sorting_algoritms.dir/build.make CMakeFiles/sorting_algoritms.dir/ListSorter.cpp.o.provides.build
+.PHONY : CMakeFiles/sorting_algoritms.dir/ListSorter.cpp.o.provides
+
+CMakeFiles/sorting_algoritms.dir/ListSorter.cpp.o.provides.build: CMakeFiles/sorting_algoritms.dir/ListSorter.cpp.o
+
+
 # Object files for target sorting_algoritms
 sorting_algoritms_OBJECTS = \
-"CMakeFiles/sorting_algoritms.dir/main.cpp.o"
+"CMakeFiles/sorting_algoritms.dir/main.cpp.o" \
+"CMakeFiles/sorting_algoritms.dir/ListSorter.cpp.o"
 
 # External object files for target sorting_algoritms
 sorting_algoritms_EXTERNAL_OBJECTS =
 
 sorting_algoritms: CMakeFiles/sorting_algoritms.dir/main.cpp.o
+sorting_algoritms: CMakeFiles/sorting_algoritms.dir/ListSorter.cpp.o
 sorting_algoritms: CMakeFiles/sorting_algoritms.dir/build.make
 sorting_algoritms: CMakeFiles/sorting_algoritms.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/pdata/Podyplomowka/Algorytmy i struktury danych/sorting_algoritms/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable sorting_algoritms"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/pdata/Podyplomowka/repos/algoritms_and_data_structures/sorting_algoritms/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable sorting_algoritms"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/sorting_algoritms.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -100,6 +126,7 @@ CMakeFiles/sorting_algoritms.dir/build: sorting_algoritms
 .PHONY : CMakeFiles/sorting_algoritms.dir/build
 
 CMakeFiles/sorting_algoritms.dir/requires: CMakeFiles/sorting_algoritms.dir/main.cpp.o.requires
+CMakeFiles/sorting_algoritms.dir/requires: CMakeFiles/sorting_algoritms.dir/ListSorter.cpp.o.requires
 
 .PHONY : CMakeFiles/sorting_algoritms.dir/requires
 
@@ -108,6 +135,6 @@ CMakeFiles/sorting_algoritms.dir/clean:
 .PHONY : CMakeFiles/sorting_algoritms.dir/clean
 
 CMakeFiles/sorting_algoritms.dir/depend:
-	cd "/home/pdata/Podyplomowka/Algorytmy i struktury danych/sorting_algoritms/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/pdata/Podyplomowka/Algorytmy i struktury danych/sorting_algoritms" "/home/pdata/Podyplomowka/Algorytmy i struktury danych/sorting_algoritms" "/home/pdata/Podyplomowka/Algorytmy i struktury danych/sorting_algoritms/cmake-build-debug" "/home/pdata/Podyplomowka/Algorytmy i struktury danych/sorting_algoritms/cmake-build-debug" "/home/pdata/Podyplomowka/Algorytmy i struktury danych/sorting_algoritms/cmake-build-debug/CMakeFiles/sorting_algoritms.dir/DependInfo.cmake" --color=$(COLOR)
+	cd /home/pdata/Podyplomowka/repos/algoritms_and_data_structures/sorting_algoritms/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pdata/Podyplomowka/repos/algoritms_and_data_structures/sorting_algoritms /home/pdata/Podyplomowka/repos/algoritms_and_data_structures/sorting_algoritms /home/pdata/Podyplomowka/repos/algoritms_and_data_structures/sorting_algoritms/cmake-build-debug /home/pdata/Podyplomowka/repos/algoritms_and_data_structures/sorting_algoritms/cmake-build-debug /home/pdata/Podyplomowka/repos/algoritms_and_data_structures/sorting_algoritms/cmake-build-debug/CMakeFiles/sorting_algoritms.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/sorting_algoritms.dir/depend
 

@@ -1,4 +1,4 @@
-# Install script for directory: /home/pdata/Podyplomowka/Algorytmy i struktury danych/sorting_algoritms
+# Install script for directory: /home/pdata/Podyplomowka/repos/algoritms_and_data_structures/sorting_algoritms
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/pdata/Podyplomowka/Algorytmy i struktury danych/sorting_algoritms/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/pdata/Podyplomowka/repos/algoritms_and_data_structures/sorting_algoritms/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

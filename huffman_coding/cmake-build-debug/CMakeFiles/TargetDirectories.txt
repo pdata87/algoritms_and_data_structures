@@ -1,0 +1,3 @@
+/home/pdata/Podyplomowka/repos/algoritms_and_data_structures/huffman_coding/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/pdata/Podyplomowka/repos/algoritms_and_data_structures/huffman_coding/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/pdata/Podyplomowka/repos/algoritms_and_data_structures/huffman_coding/cmake-build-debug/CMakeFiles/huffman_coding.dir

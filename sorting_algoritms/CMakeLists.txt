@@ -3,5 +3,5 @@ project(sorting_algoritms)
 
 set(CMAKE_CXX_STANDARD 11)
 
-set(SOURCE_FILES main.cpp)
+set(SOURCE_FILES main.cpp ListSorter.cpp ListSorter.h)
 add_executable(sorting_algoritms ${SOURCE_FILES})
