@@ -20,9 +20,9 @@ public:
     std::vector<int>Encode(char value);
     void Encode(char value, std::vector<int> & list);
     std::vector<int> Encode(std::string values);
-    char Decode(std::vector<int>, int & position);
-    std::vector<char>Decode(std::vector<int> bits);
 
+    std::vector<char>Decode(std::vector<int> bits);
+    char Decode(std::vector<int> bits, int & position);
 };
 
 

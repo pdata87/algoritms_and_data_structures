@@ -18,13 +18,17 @@ public:
     bool operator<(const HuffmanNode & other);
 
     bool IsRoot();
+    bool IsLeaf();
+    char GetValue();
+    HuffmanNode * GetLeft();
+    HuffmanNode * GetRight();
     HuffmanNode * GetParent();
     int Frequency;
     //TODO : move to private
     int bit;
 private:
 
-    bool IsLeaf;
+    bool Leaf;
 
 
 

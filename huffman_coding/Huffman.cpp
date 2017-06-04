@@ -5,11 +5,11 @@
 #include <iostream>
 #include <queue>
 #include <map>
-#include <climits> // for CHAR_BIT
 #include <iterator>
 #include <algorithm>
 
 #include "Huffman.h"
+
 using namespace std;
 
 struct HuffmanNodeComparer
@@ -88,4 +88,31 @@ void Huffman::Encode(char value, std::vector<int> &list) {
    reverse(encoding.begin(),encoding.end());
    list.insert(list.end(),encoding.begin(),encoding.end());
 
+}
+
+std::vector<char> Huffman::Decode(std::vector<int> bits) {
+
+    int position = 0;
+    vector<char> outputVector;
+
+    while (position != bits.size())
+    {
+       outputVector.push_back(Decode(bits, position));
+    }
+    return outputVector;
+
+}
+
+char Huffman::Decode(std::vector<int> bits, int &position) {
+
+    HuffmanNode * nodeCur = this->Root;
+    while (!nodeCur->IsLeaf())
+    {
+        if (position > bits.size())
+        {
+            throw("Invalid bitstring");
+        }
+        nodeCur = bits[position++] == 0 ? nodeCur->GetLeft() : nodeCur->GetRight();
+    }
+    return nodeCur->GetValue();
 }
