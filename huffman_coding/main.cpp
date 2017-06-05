@@ -5,10 +5,10 @@ int main() {
 
 
     const std::string stringToDecode = "sample string to encode";
-    Huffman h(stringToDecode);
+    Huffman huffmanEncoder(stringToDecode);
     std::vector<int> encoding;
-    encoding = h.Encode(stringToDecode);
-    std::vector<char> decoded =   h.Decode(encoding);
+    encoding = huffmanEncoder.Encode(stringToDecode);
+    std::vector<char> decoded =   huffmanEncoder.Decode(encoding);
 
     return 0;
 }

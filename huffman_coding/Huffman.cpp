@@ -7,7 +7,6 @@
 #include <map>
 #include <iterator>
 #include <algorithm>
-
 #include "Huffman.h"
 
 using namespace std;
@@ -20,7 +19,7 @@ struct HuffmanNodeComparer
 std::vector<int> Huffman::Encode(std::string values) {
 
     std::vector<int> bits;
-
+    // encode each character
     for(auto character : values){
         Encode(character,bits);
     }
@@ -31,6 +30,7 @@ std::vector<int> Huffman::Encode(std::string values) {
 
 Huffman::Huffman(std::string stringToDecode) {
     map<char,int> characterCounter;
+    //create priority quee based on frequency comparer
     priority_queue< HuffmanNode *, vector<HuffmanNode*>, HuffmanNodeComparer> queue;
 
     int overallCharactersCounter = 0;
@@ -57,7 +57,7 @@ Huffman::Huffman(std::string stringToDecode) {
     }
 
     while(queue.size()>1){
-
+        //get two most frequent elements from quee and create new node with Left / Right child.
         HuffmanNode * left = queue.top();
         queue.pop();
         HuffmanNode * right = queue.top();
@@ -85,13 +85,15 @@ void Huffman::Encode(char value, std::vector<int> &list) {
         encoding.push_back(node->bit);
         node = node->GetParent();
     }
+    //reverse order of bytes
    reverse(encoding.begin(),encoding.end());
+    // and put it to bits list
    list.insert(list.end(),encoding.begin(),encoding.end());
 
 }
 
 std::vector<char> Huffman::Decode(std::vector<int> bits) {
-
+    //Reverse decode
     int position = 0;
     vector<char> outputVector;
 
