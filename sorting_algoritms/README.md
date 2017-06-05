@@ -1,5 +1,4 @@
 # Alogorytmy sortujące : Bubble / Shell / Insert
-# Alogorytmy sortujące : Bubble / Shell / Insert
     Branch  : OOP - przepisanie apliacji do OOP
     # Example usage git
     //calling constructor only with vector and execute each algorithm

@@ -20,7 +20,6 @@ int main() {
     display_list_values(list);
 
     Mode modes (list);
-
         modes.find_modes();
         modes.printModeInfo();
 

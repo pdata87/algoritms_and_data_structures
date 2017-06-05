@@ -1,4 +1,4 @@
-/home/pdata/Apps/clion-2017.1/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/pdata/Podyplomowka/repos/algoritms_and_data_structures/sorting_algoritms
+/home/pdata/Apps/clion-2017.1/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" "/home/pdata/Podyplomowka/Algorytmy i struktury danych/sorting_algoritms"
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/pdata/Podyplomowka/repos/algoritms_and_data_structures/sorting_algoritms/cmake-build-debug
+-- Build files have been written to: /home/pdata/Podyplomowka/Algorytmy i struktury danych/sorting_algoritms/cmake-build-debug

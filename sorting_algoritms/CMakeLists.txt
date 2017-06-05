@@ -1,7 +1,7 @@
-cmake_minimum_required(VERSION 3.7)
+cmake_minimum_required(VERSION 3.5.2)
 project(sorting_algoritms)
 
 set(CMAKE_CXX_STANDARD 11)
 
-set(SOURCE_FILES main.cpp ListSorter.cpp ListSorter.h)
+set(SOURCE_FILES main.cpp)
 add_executable(sorting_algoritms ${SOURCE_FILES})
